@@ -5,22 +5,24 @@ button:disabled {
 .container {
   border: 1px solid #ffc6ac;
   height: 50%;
+  width: 50%;
   padding: 10px;
   margin-top: 20px;
   box-shadow: 16px 14px 16px -8px rgba(0, 0, 0, 0.3);
 }
+
 
 h2 {
   display: flex;
 }
 
 .logo {
-  width: 60px;
+  width: 1px;
 }
 
 .weather-logo {
-  width: 70px;
-  height: 50px;
+  width: 20px;
+  height: 20px;
 }
 
 .small-image {
@@ -54,6 +56,7 @@ p {
 .future-weather {
   text-align: center;
 }
+
 
 .author-info {
   text-align: center;
