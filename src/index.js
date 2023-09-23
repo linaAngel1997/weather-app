@@ -32,10 +32,13 @@ dayTime.innerHTML = `${days[now.getDay()]} ${now.getHours()}:${
 function setWeather(res) {
   cityName.innerHTML = res.name;
   bigTemp.innerHTML = `${Math.ceil(res.main.temp)}`;
+  degrees.innerHTML = '°C'
   weatherType.innerHTML = res.weather[0].main;
   humidity.innerHTML = res.main.humidity;
   wind.innerHTML = res.wind.speed;
   weatherLogo.src = `http://openweathermap.org/img/w/${res.weather[0].icon}.png`;
+  celsius.disabled = true;
+  farenheit.disabled = false;
 }
 
 currentBtn.addEventListener("click", getCurrentWeather);
